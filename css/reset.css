@@ -1,0 +1,68 @@
+/* reset */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+ol li,
+ul li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: middle;
+}
+html,
+body {
+	font-size: 14px;
+	line-height: 1;
+	height: 100%;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: 0px;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+	font-weight: 700;
+	color: rgba(128, 128, 128, 0.99);
+	background-color: rgba(128, 128, 128, 0.15);
+	left: 0;
+	font-size: 22px;
+	z-index: 5;
+	padding: 5px 10px;
+}

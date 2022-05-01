@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#10.1 - Формы - импровизация</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header class="header">
+          <div class="logo left"><img src="img/decor.png" alt="fls" /></div>
+          <div class="logo right"><img src="img/decor.png" alt="fls" /></div>
+          <span>живи, а работай в свободное время</span>
+        </header>
+        <!-- /.header -->
+        <main class="main">
+          <h1 class="title">
+            <span>Тестирование по пройденному материалу 10 уроков</span>
+          </h1>
+          <form action="#" class="form">
+            <div class="wall"></div>
+            <div class="user">
+              <h3 class="subtitle">Личные данные</h3>
+              <!--ИМЯ -->
+              <div class="question">
+                <div class="text">
+                  <label for="name" class="label">Введите ваше имя:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Имя..."
+                    required
+                    autocomplete="off"
+                  />
+                  <span></span>
+                </div>
+              </div>
+              <!-- ВОЗРАСТ -->
+              <div class="question">
+                <div class="text">
+                  <label for="age" class="label">Ваш возраст:</label>
+                  <input
+                    type="number"
+                    name="age"
+                    id="age"
+                    value="20"
+                    required
+                    min="18"
+                    max="45"
+                  />
+                  <span></span>
+                </div>
+              </div>
+              <!-- MAIL -->
+              <div class="question">
+                <div class="text">
+                  <label for="email" class="label">Введите ваш e-mail:</label>
+                  <input
+                    id="email"
+                    name="email"
+                    placeholder="gmail@gmail.com"
+                    required
+                    type="email"
+                    autocomplete="off"
+                  />
+                  <span></span>
+                </div>
+              </div>
+              <!-- телефон -->
+              <div class="question">
+                <div class="text">
+                  <label for="tel" class="label">Номер телефона:</label>
+                  <input
+                    id="tel"
+                    name="tel"
+                    type="tel"
+                    placeholder="+12-345-678-910"
+                    required
+                    autocomplete="off"
+                  />
+                  <span></span>
+                </div>
+              </div>
+              <div class="question">
+                <div class="text">
+                  <label for="date" class="label">Дата тестирования:</label>
+                  <input
+                    id="date"
+                    value=""
+                    name="date"
+                    type="date"
+                    required
+                    autocomplete="off"
+                    min="2020-10-10"
+                    max="2020-10-31"
+                  />
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="questions">
+              <h3 class="subtitle">Вопросы по урокам</h3>
+              <!-- 1 ПРОГРАММА -->
+              <div class="question">
+                <span
+                  >Бесплатная программа для создания и просмотра макетов
+                  сайтов?</span
+                >
+                <select name="tools" id="tools" class="select">
+                  <option value="Figma">a).Figma</option>
+                  <option value="Adobe photoshop" selected>
+                    b).Adobe photoshop
+                  </option>
+                  <option value="Adobe Xdesign">c).Adobe Xdesign</option>
+                </select>
+              </div>
+              <!-- 2 ТЭГ -->
+              <div class="question">
+                <span>Самый популярный тег в верстке</span>
+                <div class="checkbox">
+                  <input type="checkbox" name="tags" id="h1" value="0" /><label
+                    for="h1"
+                    >a). heading 1 (h1)</label
+                  >
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    name="tags"
+                    id="footer"
+                    value="0"
+                  /><label for="footer">b). footer</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="tags" id="div" value="1" /><label
+                    for="div"
+                    >c). divison (div)</label
+                  >
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    name="tags"
+                    id="header"
+                    value="0"
+                  /><label for="header">d). header</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="tags" id="span" value="0" />
+                  <label for="span">e). span</label>
+                </div>
+              </div>
+              <!-- 3 ССЫЛКА -->
+              <div class="question">
+                <span>Обязательный атрибут для ссылки</span>
+                <div class="radio">
+                  <input type="radio" name="attribute" id="class" /><label
+                    for="class"
+                    >a). class</label
+                  >
+                </div>
+                <div class="radio">
+                  <input type="radio" name="attribute" id="src" /><label
+                    for="src"
+                    >b). src</label
+                  >
+                </div>
+                <div class="radio">
+                  <input type="radio" name="attribute" id="href" /><label
+                    for="href"
+                    >c). href</label
+                  >
+                </div>
+              </div>
+              <!-- 4 ТЕКСТ -->
+              <div class="question">
+                <div class="font">
+                  <label for="font" class="label"
+                    ><span
+                      >Свойство, которое отвечает за толщину написания
+                      шрифта</span
+                    ></label
+                  >
+                  <input id="font" type="text" placeholder="font-..." />
+                </div>
+              </div>
+              <!-- 5 MARGIN -->
+              <div class="question">
+                <span>Margin - это внутренний отступ элемента</span>
+                <div class="radio">
+                  <input
+                    id="margin"
+                    type="radio"
+                    name="padmar"
+                    value="yes"
+                  /><label for="margin" class="label">a).Да</label>
+                </div>
+                <div class="radio">
+                  <input
+                    id="padding"
+                    type="radio"
+                    name="padmar"
+                    value="no"
+                  /><label for="padding" class="label">b).Нет</label>
+                </div>
+              </div>
+              <!-- 6 border -->
+              <div class="question">
+                <span
+                  >Какая запись создаст красный круг с черной границей и синей
+                  тенью?</span
+                >
+                <select name="border" id="border" size="4">
+                  <option value="no">
+                    a) border-radius: 50%;border: 2px solid black; text-shadow:
+                    2px 2px 2px blue; background: red
+                  </option>
+                  <option value="no">
+                    b) border-radius: 50px; border: 2px solid blue; box-shadow:
+                    2px 2px 2px black; background: red
+                  </option>
+                  <option value="yes">
+                    c) border-radius: 50%; border: 2px solid #000000;
+                    box-shadow: 2px 2px 2px #0000FF;background: #FF0000
+                  </option>
+                  <option value="no">
+                    d) border-radius: 50%; border: 2px solid black; box-shadow:
+                    2px 2px 2px blue; background: rgb(0,0,255)
+                  </option>
+                  <option value="no">
+                    e) border-radius: 50em; border: 2px solid black; box-shadow:
+                    2px 2px 2px blue; background: red
+                  </option>
+                </select>
+              </div>
+              <!-- 7 background -->
+              <div class="question">
+                <span
+                  >Какое свойство фона позволяет растянуть фон на всю величину
+                  блока
+                </span>
+                <div class="datalist">
+                  <input list="background" />
+                  <datalist id="background">
+                    <option value="background-image: url('')"></option>
+                    <option value="wbackground-size: cover"></option>
+                    <option value="sdbackground-size: contain"></option>
+                    <option value="background-attachment: fixed"></option>
+                    <option value="qbackground-position: 100% 100%"></option>
+                  </datalist>
+                </div>
+              </div>
+              <!-- 8 pseudo -->
+              <div class="question">
+                <span
+                  >С помощью чего из списка можно изменить стили во время клика
+                  на элемент</span
+                >
+                <select name="pseudo" id="pseudo" multiple="multiple">
+                  <optgroup label="Псевдоклассы состояния">
+                    <option value="hover">a).hover</option>
+                    <option value="active">b).active</option>
+                    <option value="visited">c).visited</option>
+                    <option value="focus">d).focus</option>
+                    <option value="target">e).target</option>
+                  </optgroup>
+                  <optgroup label="Псевдоклассы выбора">
+                    <option value="first">f).firstchild</option>
+                    <option value="last">g).lastchild</option>
+                    <option value="nth-child()">h).nth-child(n)</option>
+                  </optgroup>
+                  <optgroup label="Псевдоэлементы">
+                    <option value="before">i).before</option>
+                    <option value="after">j).after</option>
+                  </optgroup>
+                </select>
+              </div>
+              <!-- 9  position -->
+              <div class="question">
+                <div class="text font">
+                  <label for="position" class="label">
+                    <span
+                      >Какое значение по-умолчанию у свойства position</span
+                    ></label
+                  ><input
+                    type="text"
+                    id="position"
+                    name="position"
+                    placeholder="position:"
+                  />
+                </div>
+              </div>
+              <!-- 10 submit -->
+              <div class="question">
+                <span>У какого тега формы есть атрибут type="submit"</span>
+                <div class="radio">
+                  <input type="radio" name="submit" id="btn" value="button" />
+                  <label for="btn" class="label">a).button</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="submit" id="inp" value="input" />
+                  <label for="inp" class="label">b).input</label>
+                </div>
+              </div>
+
+              <div class="textarea">
+                <textarea
+                  name="feed"
+                  id="textarea"
+                  cols="30"
+                  rows="10"
+                  placeholder="Оставьте ваш отзыв"
+                ></textarea>
+                <ol class="answers" id="answers">
+                  <li>1 - a</li>
+                  <li>2 - c</li>
+                  <li>3 - c</li>
+                  <li>4 - font-weight</li>
+                  <li>5 - b</li>
+                  <li>6 - c</li>
+                  <li>7 - background-size: cover</li>
+                  <li>8 - d</li>
+                  <li>9 - static</li>
+                  <li>10 - a</li>
+                </ol>
+
+                <div class="buttons">
+                  <button class="link" type="submit">Отправить</button>
+                  <button class="link" type="reset">Сбросить</button>
+                  <a class="show link" href="#answers">Показать ответы</a>
+                  <a class="link second" href="forms.html"
+                    ><span>Вторая часть</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </form>
+        </main>
+        <!-- /.main -->
+        <footer class="footer"><span>Valerii Elwa 2020</span></footer>
+        <!-- /.footer -->
+      </div>
+      <!-- контейнер -->
+    </div>
+    <!-- /.wrapper -->
+  </body>
+</html>
